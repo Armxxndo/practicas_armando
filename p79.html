@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>practica79</title>
+  		<script>
+			function mostrarEmail() {
+ 		 const opcionSeleccionada = document.querySelector('input[name="opcion"]:checked').value;
+ 		 const campoEmail = document.getElementById('campoEmail');
+
+ 		 if (opcionSeleccionada === 'opcion1') {
+ 		   campoEmail.style.display = 'block';
+ 		 } else {
+		    campoEmail.style.display = 'none';
+ 		 }
+		}
+ 		 </script>
+		</head>
+		<body>
+			<center><h1>CONALEP<h1>
+			<img src="imagenes/log.png" widtg:'600px' height:'700px'>
+			<p>El Colegio Nacional de Educación Profesional Técnica es una Institución líder en la formación de Profesionales Técnicos y Profesionales Técnicos Bachiller en México, que cursan programas reconocidos por su calidad.</p>
+			   <table border=0 width450><tr><td align="center">
+				 <img src="imagenes/fbin.jpg" usemap="#immap">
+
+<map name="immap">
+    <area href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwjKp_Wvt9eGAxW0g4kEHXmUDwUQFnoECBIQAQ&amp;url=https%3A%2F%2Fwww.instagram.com%2Fconalepmexico%2F%3Fhl%3Des&amp;usg=AOvVaw1-Dl__6coz6UlY6wlynH2p&amp;opi=89978449" coords="87,418,435,93" shape="rect">
+    <area  href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwjP5qGst9eGAxXCrYkEHef3E9sQFnoECA8QAQ&amp;url=https%3A%2F%2Fwww.facebook.com%2FCONALEP.Mex%2F%3Flocale%3Des_LA&amp;usg=AOvVaw26Y3k_bgz0t0fe3U_KVSzE&amp;opi=89978449" coords="507,416,827,84" shape="rect">
+</map>
+					<h1>Estas interesad@?</h1>
+					<form action="correo" method="post" enctype="text/plain" id="miFormulario">
+  			<label for="opcion1">SI</label>
+ 			 <input type="radio" id="opcion1" name="opcion" value="opcion1" onclick="mostrarEmail()">
+
+ 			 <label for="opcion2">NO</label>
+ 			 <input type="radio" id="opcion2" name="opcion" value="opcion2" onclick="mostrarEmail()">
+ 			 <br>
+
+ 			 <div id="campoEmail" style="display: none;">
+ 			   <label for="email">Correo electrónico:</label>
+  			  <input type="email" id="email" name="email" required>
+ 			 </div>
+
+  			<button type="submit">Enviar</button>
+				 <button type="reset">Borrar</button>
+			</form>
+
+		</body>
+	</html>
